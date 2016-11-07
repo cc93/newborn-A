@@ -28,7 +28,7 @@
         left: 0;
         top: 0;
         position: absolute;
-        opacity: 0;
+        display: none;
     }
 
     .loading {
@@ -443,7 +443,7 @@
 
 </style>
 <template>
-    <div class="app" id="app" @scroll="computeCurrentPage">
+    <div class="app"  @scroll="computeCurrentPage">
         <div class="block" :style="{display:isPortrait? 'none':'block'}">
             <p class="block-text pa">请使用竖屏浏览</p>
         </div>
@@ -453,8 +453,8 @@
                 <img class="loading-cloud pa" src="http://static.unicef.cn/201610cwh5/images/img_1.png" alt="">
                 <div id="indicatorContainer" class="loading-bar pa"></div>
             </div>
-            <div class="stage" id="stage"
-                 :style="{opacity:isLoadComplete? 1:0}">
+            <div class="stage"
+                 :style="{display:isLoadComplete? 'block':'none'}">
 
                 <div id="page1" class="page bg-lightblue">
                     <div class="p1-head">
