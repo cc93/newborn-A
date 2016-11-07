@@ -674,7 +674,7 @@
                 totalPages: 10,
                 pageY: [],
                 scrollBlocked: false,
-                registeredHref: 'http://www.baidu.cn/',
+                registeredHref: 'https://www.baidu.com/',
                 sponseHref: 'http://www.unicef.cn/cn/',
                 playingAudioVm: null,
                 pagesHeight: [0, 1206, 1165, 967, 888, 1050, 950, 1016, 1201, 1422, 1133]
